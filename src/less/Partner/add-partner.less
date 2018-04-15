@@ -1,0 +1,81 @@
+@import "./comm.less";
+@import "../../LUI/css/com.less";
+#content {
+  min-height:500px;
+  padding:0 30px 50px;
+  .base{line-height: 45px;font-size:16px;color:#505050;text-align: left;margin:10px 0;}
+  .inner-mes{
+    padding-left:150px;
+    line-height: 45px;
+    .input-search{background:#fff;}
+  }
+  .table{
+    width:590px;margin-left:101px;margin-top:0;
+    margin-bottom:50px;
+  }
+  table{
+    tr{cursor:default;
+       &:hover{background:#e5ebf1;}
+    }
+    tr:first-child{background:#f8f8f8;
+        &:hover{background:#f8f8f8;}
+    }
+  }
+  table #tb tr:first-child{
+      background:#fff;
+      &:hover{background:#e5ebf1;}
+  }
+}
+.eg-pop{
+  width:370px;
+  min-height:280px;
+  .header{
+    height: 45px;
+   line-height: 45px;
+    font-size:16px;
+    .close{top:15px;}
+  }
+  .body{
+    padding:40px 60px 47px;
+    line-height: 45px;
+  }
+}
+#add-city{
+  .body{
+    line-height: normal;
+    padding:0;
+    padding-top:40px;
+    width:215px;
+    margin:0 auto;
+    .lui_dropdownlist{
+      width:175px;
+    }
+  }
+}
+#add-country{
+  width:620px;
+  .body{
+    padding:0 30px 15px;
+    .title{line-height: 45px;margin:10px 0;}
+    .choose{
+      margin-left:25px;
+      font-size:0;
+      label{
+        font-size:16px;
+        display:inline-block;
+        width:33.33%;
+        line-height: 46px;
+        vertical-align:text-top;
+      }
+      label.unchoose{
+          color:#bdc0c3;
+          .checkbox{background: url(../../../build/img/city_cant_choose.png) no-repeat;}
+      }
+    }
+  }
+}
+.choose .box{
+  max-height:250px;
+  overflow-y:auto;
+  margin-bottom: 40px;
+}

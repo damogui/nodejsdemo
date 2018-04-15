@@ -1,0 +1,17 @@
+@import "./comm.less";
+@import "../../js/lib/page/paging.less";
+#content {
+    min-height:500px;
+    table tr td a{
+        color:#686e73;
+    }
+    .table table tbody tr:first-child{background:#ffecdc;}
+    tbody#c-benyuechongzhi-tbody tr:first-child,tbody#c-benyuechongzhi-table tr:first-child,tbody#c-benyueqianyue-tbody tr:first-child{
+        background:#fff;
+        &:hover{background:#fff6ef;}
+    }
+    .tell_user{
+          display:none;position:absolute;padding:25px 20px 28px 30px;line-height: 27px;background:#fff;top: -201px;left:--160px; width: 367px; border:1px solid #ffbe91;color:#ff6b00;
+      }
+    .tip:hover .tell_user{display:block;}
+}
