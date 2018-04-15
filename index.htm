@@ -78,16 +78,16 @@
                     }
                 } else {
 
-                    var href = "/egword/src/html/" + pdir + "/" + obj[p];
-                    html += '<dd><a style="height: 50px;line-height: 50px;display: inline-block" href="' + href + '">' + p + "：" + obj[p] + '</a></dd>';
+                    var href = "/nodejs/src/html/" + pdir + "/" + obj[p];
+                    html += '<dd><a style="height: 50px;line-height: 50px;display: inline-block" target="_Blank" href="' + href + '">' + p + "：" + obj[p] + '</a></dd>';
 
 
                 }
             }
 
         }
-        debugger;
-        wp(list);
+
+        wp(list); //测试
         document.getElementById("wrap").innerHTML = html;
         var dts = document.getElementsByTagName("dt");
         var len = dts.length;
